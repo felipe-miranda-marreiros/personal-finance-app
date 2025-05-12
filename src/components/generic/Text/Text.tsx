@@ -10,13 +10,13 @@ export interface TextProps
 const textVariants = cva('text-foreground', {
   variants: {
     variant: {
-      'preset-1': 'text-preset-1',
-      'preset-2': 'text-preset-2',
-      'preset-3': 'text-preset-3',
-      'preset-4': 'text-preset-4',
-      'preset-4-bold': 'text-preset-4-bold',
-      'preset-5': 'text-preset-5',
-      'preset-5-bold': 'text-preset-5-bold'
+      'preset-1': '!text-preset-1',
+      'preset-2': '!text-preset-2',
+      'preset-3': '!text-preset-3',
+      'preset-4': '!text-preset-4',
+      'preset-4-bold': '!text-preset-4-bold',
+      'preset-5': '!text-preset-5',
+      'preset-5-bold': '!text-preset-5-bold'
     }
   },
   defaultVariants: {
@@ -34,5 +34,5 @@ export function Text({
     asChild?: boolean
   }) {
   const Comp = asChild ? Slot : 'p'
-  return <Comp data-slot="p" className={cn(textVariants({ variant, className }))} {...props} />
+  return <Comp {...props} className={cn(textVariants({ variant, className }))} />
 }

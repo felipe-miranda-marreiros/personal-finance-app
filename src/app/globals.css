@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&: is(.dark *));
 
 :root {
   --beige-500: hsl(23, 6%, 57%);
@@ -72,56 +72,46 @@
   --spacing-150: 12px;
   --spacing-100: 8px;
   --spacing-50: 4px;
+
+  --text-preset-1: 32px;
+  --text-preset-1--line-height: 120%;
+  --text-preset-1--letter-spacing: 0px;
+  --text-preset-1--font-weight: 700;
+
+  --text-preset-2: 20px;
+  --text-preset-2--line-height: 120%;
+  --text-preset-2--letter-spacing: 0px;
+  --text-preset-2--font-weight: 700;
+
+  --text-preset-3: 16px;
+  --text-preset-3--line-height: 150%;
+  --text-preset-3--letter-spacing: 0px;
+  --text-preset-3--font-weight: 700;
+
+  --text-preset-4: 14px;
+  --text-preset-4--line-height: 150%;
+  --text-preset-4--letter-spacing: 0px;
+  --text-preset-4--font-weight: 400;
+
+  --text-preset-4-bold: 14px;
+  --text-preset-4-bold--line-height: 150%;
+  --text-preset-4-bold--letter-spacing: 0px;
+  --text-preset-4-bold--font-weight: 700;
+
+  --text-preset-5: 12px;
+  --text-preset-5--line-height: 150%;
+  --text-preset-5--letter-spacing: 0px;
+  --text-preset-5--font-weight: 400;
+
+  --text-preset-5-bold: 12px;
+  --text-preset-5-bold--line-height: 150%;
+  --text-preset-5-bold--letter-spacing: 0px;
+  --text-preset-5-bold--font-weight: 700;
 }
 
 :root {
   --background: var(--white);
   --foreground: var(--grey-900);
-}
-
-@layer components {
-  .text-preset-1 {
-    font-size: 32px;
-    line-height: 120%;
-    letter-spacing: 0px;
-    font-weight: bold;
-  }
-  .text-preset-2 {
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0px;
-    font-weight: bold;
-  }
-  .text-preset-3 {
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0px;
-    font-weight: bold;
-  }
-  .text-preset-4 {
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: 0px;
-    font-weight: 400;
-  }
-  .text-preset-4-bold {
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: 0px;
-    font-weight: bold;
-  }
-  .text-preset-5 {
-    font-size: 12px;
-    line-height: 150%;
-    letter-spacing: 0px;
-    font-weight: 400;
-  }
-  .text-preset-5-bold {
-    font-size: 12px;
-    line-height: 150%;
-    letter-spacing: 0px;
-    font-weight: bold;
-  }
 }
 
 html {
