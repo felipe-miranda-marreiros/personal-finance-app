@@ -1,4 +1,5 @@
 import { Button } from '@/components/generic/Button/Button'
+import { Input } from '@/components/generic/Input/Input'
 import { Text } from '@/components/generic/Text/Text'
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         Placeholder
       </Button>
       <Button variant="destroy">Placeholder</Button>
+      <Input rightIcon="AArrowDown" leftIcon="AArrowDown" placeholder="Placeholder" />
     </div>
   )
 }
