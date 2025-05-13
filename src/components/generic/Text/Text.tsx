@@ -7,7 +7,7 @@ export interface TextProps
   extends React.HTMLAttributes<HTMLParagraphElement>,
     VariantProps<typeof textVariants> {}
 
-const textVariants = cva('text-foreground', {
+const textVariants = cva('text-grey-500', {
   variants: {
     variant: {
       'preset-1': '!text-preset-1',

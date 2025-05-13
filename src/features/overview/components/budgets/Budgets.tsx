@@ -1,0 +1,66 @@
+import { Button } from '@/components/generic/Button/Button'
+import { Card } from '@/components/generic/Card/Card'
+import { CardContent } from '@/components/generic/Card/CardContent'
+import { CardHeader } from '@/components/generic/Card/CardHeader'
+import { DataInfo } from '@/components/generic/DataInfo/DataInfo'
+import { DataInfoItem } from '@/components/generic/DataInfo/DataInfoItem'
+import { Icon } from '@/components/generic/Icons/Icon'
+import { Text } from '@/components/generic/Text/Text'
+
+export function Budgets() {
+  return (
+    <div className="mt-[16px]">
+      <Card>
+        <CardHeader>
+          <Text variant="preset-2" className="text-grey-900">
+            Budgets
+          </Text>
+          <Button variant="tertiary" size="tertiary">
+            See Details
+            <Icon name="ChevronRight" />
+          </Button>
+        </CardHeader>
+        <CardContent>
+          <div className="mt-[20px] relative grid grid-cols-2 grid-rows-2 gap-[16px]">
+            <DataInfo>
+              <DataInfoItem
+                title="Savings"
+                description={new Intl.NumberFormat('pt-BR', {
+                  style: 'currency',
+                  currency: 'BRL'
+                }).format(850)}
+              />
+            </DataInfo>
+            <DataInfo>
+              <DataInfoItem
+                title="Savings"
+                description={new Intl.NumberFormat('pt-BR', {
+                  style: 'currency',
+                  currency: 'BRL'
+                }).format(850)}
+              />
+            </DataInfo>
+            <DataInfo>
+              <DataInfoItem
+                title="Savings"
+                description={new Intl.NumberFormat('pt-BR', {
+                  style: 'currency',
+                  currency: 'BRL'
+                }).format(850)}
+              />
+            </DataInfo>
+            <DataInfo>
+              <DataInfoItem
+                title="Savings"
+                description={new Intl.NumberFormat('pt-BR', {
+                  style: 'currency',
+                  currency: 'BRL'
+                }).format(850)}
+              />
+            </DataInfo>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  )
+}

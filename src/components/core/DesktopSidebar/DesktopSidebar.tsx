@@ -7,7 +7,7 @@ import { CircleArrowRight } from 'lucide-react'
 import { SidebarLinkList } from '../SidebarLinkList/SidebarLinkList'
 
 export function DesktopSidebar() {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <div
