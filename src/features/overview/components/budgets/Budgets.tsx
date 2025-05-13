@@ -22,7 +22,7 @@ export function Budgets() {
       <CardContent className="mt-[20px] md:py-[31px] grid grid-cols-1 xl:grid-cols-[1fr_100px] md:gap-[16px]">
         <div className="h-[240px] w-full bg-green mb-[16px] rounded-lg"></div>
         <div className="relative grid grid-cols-2 grid-rows-2 xl:justify-self-end xl:grid-cols-1 gap-[16px]">
-          <DataInfo>
+          <DataInfo color="green">
             <DataInfoItem
               title="Entertainment"
               description={new Intl.NumberFormat('pt-BR', {
@@ -31,7 +31,7 @@ export function Budgets() {
               }).format(850)}
             />
           </DataInfo>
-          <DataInfo>
+          <DataInfo color="cyan">
             <DataInfoItem
               title="Savings"
               description={new Intl.NumberFormat('pt-BR', {
@@ -40,7 +40,7 @@ export function Budgets() {
               }).format(850)}
             />
           </DataInfo>
-          <DataInfo>
+          <DataInfo color="yellow">
             <DataInfoItem
               title="Savings"
               description={new Intl.NumberFormat('pt-BR', {
@@ -49,7 +49,7 @@ export function Budgets() {
               }).format(850)}
             />
           </DataInfo>
-          <DataInfo>
+          <DataInfo color="navy">
             <DataInfoItem
               title="Savings"
               description={new Intl.NumberFormat('pt-BR', {

@@ -14,8 +14,12 @@ export default function OverviewPage() {
       <Balance />
       <div className="flex flex-col lg:flex-row gap-[20px]">
         <div className="flex lg:flex-2 flex-col gap-[20px]">
-          <Pots />
-          <Transactions />
+          <div>
+            <Pots />
+          </div>
+          <div className="flex-2">
+            <Transactions />
+          </div>
         </div>
         <div className="flex lg:flex-1 flex-col gap-[20px]">
           <div className="flex-2">

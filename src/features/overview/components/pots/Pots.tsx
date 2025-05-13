@@ -9,7 +9,7 @@ import { Text } from '@/components/generic/Text/Text'
 
 export function Pots() {
   return (
-    <Card className="h-full">
+    <Card className="lg:h-[218px]">
       <CardHeader>
         <Text variant="preset-2" className="text-grey-900">
           Pots

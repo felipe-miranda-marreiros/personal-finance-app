@@ -21,13 +21,13 @@ export function RecurringBills() {
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-1 gap-[12px]">
-          <DataInfo leftMarkType="border">
+          <DataInfo variant="border" color="green">
             <RecurringBillItem />
           </DataInfo>
-          <DataInfo leftMarkType="border">
+          <DataInfo variant="border" color="cyan">
             <RecurringBillItem />
           </DataInfo>
-          <DataInfo leftMarkType="border">
+          <DataInfo variant="border" color="navy">
             <RecurringBillItem />
           </DataInfo>
         </div>
