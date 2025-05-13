@@ -12,10 +12,20 @@ export default function OverviewPage() {
         <h1>Overview</h1>
       </Text>
       <Balance />
-      <Pots />
-      <Transactions />
-      <Budgets />
-      <RecurringBills />
+      <div className="flex flex-col lg:flex-row gap-[20px]">
+        <div className="flex lg:flex-2 flex-col gap-[20px]">
+          <Pots />
+          <Transactions />
+        </div>
+        <div className="flex lg:flex-1 flex-col gap-[20px]">
+          <div className="flex-2">
+            <Budgets />
+          </div>
+          <div className="flex-1">
+            <RecurringBills />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

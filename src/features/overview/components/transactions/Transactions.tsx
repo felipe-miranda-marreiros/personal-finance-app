@@ -8,24 +8,23 @@ import { TransactionItem } from './components/TransactionItem'
 
 export function Transactions() {
   return (
-    <div className="mt-[16px]">
-      <Card>
-        <CardHeader>
-          <Text variant="preset-2" className="text-grey-900">
-            Transactions
-          </Text>
-          <Button variant="tertiary" size="tertiary">
-            View All
-            <Icon name="ChevronRight" />
-          </Button>
-        </CardHeader>
-        <CardContent>
-          <TransactionItem />
-          <TransactionItem />
-          <TransactionItem />
-          <TransactionItem />
-        </CardContent>
-      </Card>
-    </div>
+    <Card className="h-full">
+      <CardHeader>
+        <Text variant="preset-2" className="text-grey-900">
+          Transactions
+        </Text>
+        <Button variant="tertiary" size="tertiary">
+          View All
+          <Icon name="ChevronRight" />
+        </Button>
+      </CardHeader>
+      <CardContent className="space-y-[20px] mt-[32px]">
+        <TransactionItem />
+        <TransactionItem />
+        <TransactionItem />
+        <TransactionItem />
+        <TransactionItem />
+      </CardContent>
+    </Card>
   )
 }

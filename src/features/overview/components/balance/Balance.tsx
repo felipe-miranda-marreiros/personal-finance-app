@@ -1,5 +1,5 @@
 import { Card } from '@/components/generic/Card/Card'
-import { OverviewCardMetric } from '@/components/generic/Card/CardContent'
+import { OverviewCardMetric } from './components/OverviewCardMetric'
 
 export function Balance() {
   return (
