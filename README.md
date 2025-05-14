@@ -16,21 +16,29 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## About the project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![Overview](https://github.com/user-attachments/assets/7e1dd785-64de-4eff-84be-5b6cdbd5feab)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+This app contains 5 pages (Overview, Transactions, Budgets, Pots, and Recurring Bills).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## What users can do
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Your users should be able to:
 
-## Deploy on Vercel
+- See all of the personal finance app data at-a-glance on the overview page
+- View all transactions on the transactions page with pagination for every ten transactions
+- Search, sort, and filter transactions
+- Create, read, update, delete (CRUD) budgets and saving pots
+- View the latest three transactions for each budget category created
+- View progress towards each pot
+- Add money to and withdraw money from pots
+- View recurring bills and the status of each for the current month
+- Search and sort recurring bills
+- Receive validation messages if required form fields aren't completed
+- Navigate the whole app and perform all actions using only their keyboard
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#
