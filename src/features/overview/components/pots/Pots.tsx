@@ -35,7 +35,7 @@ export function Pots() {
           </div>
         </div>
         <div className="relative grid grid-cols-2 grid-rows-2 gap-[16px]">
-          <DataInfo>
+          <DataInfo color="cyan">
             <DataInfoItem
               title="Savings"
               description={new Intl.NumberFormat('pt-BR', {
@@ -44,7 +44,7 @@ export function Pots() {
               }).format(850)}
             />
           </DataInfo>
-          <DataInfo>
+          <DataInfo color="green">
             <DataInfoItem
               title="Savings"
               description={new Intl.NumberFormat('pt-BR', {
@@ -53,7 +53,7 @@ export function Pots() {
               }).format(850)}
             />
           </DataInfo>
-          <DataInfo>
+          <DataInfo color="navy">
             <DataInfoItem
               title="Savings"
               description={new Intl.NumberFormat('pt-BR', {
@@ -62,7 +62,7 @@ export function Pots() {
               }).format(850)}
             />
           </DataInfo>
-          <DataInfo>
+          <DataInfo color="yellow">
             <DataInfoItem
               title="Savings"
               description={new Intl.NumberFormat('pt-BR', {
