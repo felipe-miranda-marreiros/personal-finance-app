@@ -21,7 +21,9 @@ export default function TransactionsPage() {
 
       <div>
         <Card>
-          <TransactionList />
+          <div className="sm:hidden">
+            <TransactionList />
+          </div>
           <TransactionDataTable />
           <Pagination>
             <PaginationContent>
