@@ -122,3 +122,7 @@ html {
 * {
   font-family: var(--font-public-sans);
 }
+
+th {
+  font-weight: normal;
+}
