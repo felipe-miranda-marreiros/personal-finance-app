@@ -117,6 +117,7 @@
 html {
   color: var(--foreground);
   background: var(--background);
+  overflow: hidden;
 }
 
 * {
