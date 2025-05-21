@@ -11,6 +11,15 @@ import {
 import { Text } from '@/components/generic/Text/Text'
 import { TransactionDataTable } from '../datatable/TransactionDataTable'
 import { TransactionList } from '../components/TransactionList'
+import { Input } from '@/components/generic/Input/Input'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectSeparator,
+  SelectTrigger,
+  SelectValue
+} from '@/components/generic/Select/Select'
 
 export default function TransactionsPage() {
   return (
@@ -21,8 +30,30 @@ export default function TransactionsPage() {
 
       <div>
         <Card>
+          <div className="mb-[24px] flex items-center justify-between">
+            <Input
+              className="sm:max-w-[162px] lg:max-w-[320px]"
+              placeholder="Search transaction"
+              rightIcon="Search"
+            />
+            <div>
+              <Select>
+                <SelectTrigger>
+                  <SelectValue placeholder="Theme" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="light">Light</SelectItem>
+                  <SelectSeparator />
+                  <SelectItem value="dark">Dark</SelectItem>
+                  <SelectSeparator />
+                  <SelectItem value="system">System</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+
           <div className="sm:hidden">
-            <TransactionList />
+            <TransactionList showCategory />
           </div>
           <TransactionDataTable />
           <Pagination>

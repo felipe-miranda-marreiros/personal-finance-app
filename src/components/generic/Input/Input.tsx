@@ -45,7 +45,7 @@ function Input({
     <label
       role="group"
       htmlFor={id ?? 'input'}
-      className={cn(inputVariants({ variant, size, className }))}
+      className={cn('inline-flex items-center', inputVariants({ variant, size, className }))}
     >
       {leftIcon && <Icon name={leftIcon} />}
       <input
