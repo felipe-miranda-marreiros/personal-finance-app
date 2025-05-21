@@ -10,7 +10,7 @@ export interface SidebarLinkProps {
 
 export function SidebarLink({ href, iconName, label }: SidebarLinkProps) {
   return (
-    <li className="w-[68px] sm:w-[104px] h-[44px] md:h-[56px]">
+    <li className="w-fit h-[44px] md:h-[56px]">
       <Link href={href}>
         <div className="flex flex-col md:flex-row sm:gap-[4px] md:gap-[16px] items-center">
           <Icon name={iconName} />
