@@ -5,7 +5,8 @@ import './globals.css'
 const publicSans = Public_Sans({
   variable: '--font-public-sans',
   subsets: ['latin'],
-  weight: ['100', '200', '400', '600', '700']
+  weight: ['100', '200', '400', '600', '700'],
+  display: 'swap'
 })
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${publicSans.variable} antialiased min-h-screen`}>{children}</body>
+      <body className={`${publicSans.className} antialiased min-h-screen`}>{children}</body>
     </html>
   )
 }

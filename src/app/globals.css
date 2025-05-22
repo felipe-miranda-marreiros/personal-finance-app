@@ -121,7 +121,15 @@ html {
 }
 
 * {
-  font-family: var(--font-public-sans);
+  font-family:
+    'Public Sans',
+    -apple-system,
+    system-ui,
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 th {
