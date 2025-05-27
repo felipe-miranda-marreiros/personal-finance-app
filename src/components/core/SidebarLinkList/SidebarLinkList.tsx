@@ -2,35 +2,35 @@ import { SidebarLink, SidebarLinkProps } from '../SidebarLink/SidebarLink'
 
 const data: SidebarLinkProps[] = [
   {
-    href: '/',
+    href: '/dashboard/overview',
     iconName: 'House',
     label: 'Overview'
   },
   {
-    href: '/',
-    iconName: 'AArrowDown',
+    href: '/dashboard/transactions',
+    iconName: 'ArrowDownUp',
     label: 'Transactions'
   },
   {
-    href: '/',
-    iconName: 'AArrowDown',
+    href: '/dashboard/budgets',
+    iconName: 'ChartPie',
     label: 'Budgets'
   },
   {
-    href: '/',
-    iconName: 'ALargeSmall',
+    href: '/dashboard/pots',
+    iconName: 'CircleDollarSign',
     label: 'Pots'
   },
   {
-    href: '/',
-    iconName: 'ALargeSmall',
+    href: '/dashboard/recurring-bills',
+    iconName: 'ReceiptText',
     label: 'Recurring bills'
   }
 ]
 
 export function SidebarLinkList() {
   return (
-    <ul className="mt-[8px] flex-1 flex justify-between items-center md:flex-col md:items-start">
+    <ul className="px-[16px] md:px-0 flex-1 flex justify-between items-center md:flex-col md:items-start">
       {data.map((link) => {
         return (
           <SidebarLink
