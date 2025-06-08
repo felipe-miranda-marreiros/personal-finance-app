@@ -19,6 +19,7 @@ export function SidebarLink({ href, iconName, label }: SidebarLinkProps) {
 
   return (
     <li
+      title={label}
       className={cn(
         'h-[44px] sm:h-[66px] md:w-[80px] transition-[width] ease-in delay-150 md:h-[56px] w-[68px] sm:w-[104px] flex items-center justify-center md:justify-stretch md:pl-[32px]',
         isActive &&

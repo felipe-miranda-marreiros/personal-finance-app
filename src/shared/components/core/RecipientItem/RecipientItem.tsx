@@ -5,12 +5,7 @@ import { Recipient, RecipientProps } from '../Recipient/Recipient'
 export function RecipientItem(props: Transaction & RecipientProps) {
   return (
     <div className="h-[68px] not-last:border-b not-last:border-b-grey-100 flex items-center justify-between">
-      <Recipient
-        showCategory={props.showCategory}
-        avatar={props.avatar}
-        category={props.category}
-        name={props.name}
-      />
+      <Recipient showCategory={props.showCategory} category={props.category} user={props.user} />
       <div className="text-right">
         <Text variant="preset-4-bold" className="text-green">
           +{props.amount}
