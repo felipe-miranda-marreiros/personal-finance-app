@@ -77,11 +77,13 @@ easier to developers search, maintain and test.
 
 Inside `./src` folder we have:
 
+```txt
 ├── app
 ├── entities
 ├── features
 ├── pages
 └── shared
+```
 
 Each folder can be called `layers`. Each layer has its own
 rules.
