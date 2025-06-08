@@ -15,10 +15,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [Summary](#summary)
 - [About the project](#about-the-project)
   - [What users can do](#what-users-can-do)
+  - [Code Quality](#code-quality)
+    - [Strategy](#strategy)
 - [Architectural methodology: Feature-Sliced Design](#architectural-methodology-feature-sliced-design)
   - [Feature-Sliced Design](#feature-sliced-design)
   - [Project Structure](#project-structure)
   - [Rules](#rules)
+    - [Overview](#overview)
     - [App Rules](#app-rules)
       - [Can use](#can-use)
       - [Can be used by](#can-be-used-by)
@@ -34,6 +37,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
     - [Shared Rules](#shared-rules)
       - [Can use](#can-use-4)
       - [Can be used by](#can-be-used-by-4)
+  - [Slice Anatomy](#slice-anatomy)
+  - [Enforcing Architecture](#enforcing-architecture)
 
 ## About the project
 
@@ -61,15 +66,14 @@ Your users should be able to:
 
 ### Code Quality
 
-Refers to the overall effectiveness, reliability, and maintainability of a piece of software code. We can maintain a good code quality 
+Refers to the overall effectiveness, reliability, and maintainability of a piece of software code. We can maintain a good code quality
 by using `Husky`. In other words, we don't want to push bad code to project's repository.
 
 #### Strategy
 
-Using this strategy we can archive effectiveness, reliability, and maintainability.
+Using this strategy we can successfully achieve effectiveness, reliability, and maintainability.
 
 ![Screenshot 2025-06-08 at 02 15 05](https://github.com/user-attachments/assets/db626c9c-8486-46f8-ac34-89648e8d155a)
-
 
 ## Architectural methodology: Feature-Sliced Design
 
@@ -110,6 +114,8 @@ rule and no one can break it.
 #### Overview
 
 ![image](https://github.com/user-attachments/assets/47098814-9266-41dc-bbb8-24425469182c)
+
+Following this project structure, we can have:
 
 #### App Rules
 
@@ -170,3 +176,23 @@ This layer holds reusable components and utilities that aren’t linked to speci
 ##### Can be used by
 
 - entities, features, pages, app.
+
+### Slice Anatomy
+
+In this project, each Slice can have this anatomy:
+
+- Example using the Transaction Slice.
+
+```txt
+├── pages - the reunion of components and datatable related to Transaction Slice only.
+├── components - components related to Transaction Slice.
+├── datatable - a table made with React Table related to Transaction Slice.
+└── api - endpoints related to Transaction Slice.
+```
+
+### Enforcing Architecture
+
+Enforcing architecture means establishing and maintaining adherence to predefined architectural rules and patterns to ensure a consistent, maintainable, and scalable codebase.
+
+We can use eslint to delimit which layers can access other layers. This way we can improve omboarding, make less mistakes related to architecture, and ensure
+that everyone is following the architecture structure defined on the project.
