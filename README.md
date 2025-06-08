@@ -59,6 +59,18 @@ Your users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
+### Code Quality
+
+Refers to the overall effectiveness, reliability, and maintainability of a piece of software code. We can maintain a good code quality 
+by using `Husky`. In other words, we don't want to push bad code to project's repository.
+
+#### Strategy
+
+Using this strategy we can archive effectiveness, reliability, and maintainability.
+
+![Screenshot 2025-06-08 at 02 15 05](https://github.com/user-attachments/assets/db626c9c-8486-46f8-ac34-89648e8d155a)
+
+
 ## Architectural methodology: Feature-Sliced Design
 
 Feature-Sliced Design (FSD) is an architectural methodology for scaffolding front-end applications. Simply put, it's a compilation of rules and conventions on organizing code. The main purpose of this methodology is to make the project more understandable and structured in the face of ever-changing business requirements.
@@ -94,6 +106,10 @@ Defining rules can make the development more precise,
 increase cohesion and make the project less prone
 to errors. Everyone on the project can follow a concise
 rule and no one can break it.
+
+#### Overview
+
+![image](https://github.com/user-attachments/assets/47098814-9266-41dc-bbb8-24425469182c)
 
 #### App Rules
 
