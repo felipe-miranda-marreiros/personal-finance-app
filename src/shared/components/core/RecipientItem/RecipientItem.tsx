@@ -1,11 +1,24 @@
 import { Text } from '@shared/components/generic/Text/Text'
-import { Transaction } from '@entities/transaction/transaction'
-import { Recipient, RecipientProps } from '../Recipient/Recipient'
+import { Recipient } from '../Recipient/Recipient'
 
-export function RecipientItem(props: Transaction & RecipientProps) {
+interface RecipientItemProps {
+  category: string
+  amount: string
+  transaction_date: string
+  showCategory: boolean
+  avatar: string
+  name: string
+}
+
+export function RecipientItem(props: RecipientItemProps) {
   return (
     <div className="h-[68px] not-last:border-b not-last:border-b-grey-100 flex items-center justify-between">
-      <Recipient showCategory={props.showCategory} category={props.category} user={props.user} />
+      <Recipient
+        avatar={props.avatar}
+        name={props.name}
+        showCategory={props.showCategory}
+        category={props.category}
+      />
       <div className="text-right">
         <Text variant="preset-4-bold" className="text-green">
           +{props.amount}

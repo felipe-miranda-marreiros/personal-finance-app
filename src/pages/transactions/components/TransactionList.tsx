@@ -6,7 +6,17 @@ export function TransactionList(props: RecipientProps) {
   return (
     <div>
       {transactions.map((item) => {
-        return <RecipientItem {...item} showCategory={props.showCategory} key={item.id} />
+        return (
+          <RecipientItem
+            amount={item.amount}
+            category={item.category}
+            transaction_date={item.transaction_date}
+            name={item.user.name}
+            avatar={item.user.avatar}
+            showCategory={props.showCategory ?? false}
+            key={item.id}
+          />
+        )
       })}
     </div>
   )

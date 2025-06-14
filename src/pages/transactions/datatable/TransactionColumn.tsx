@@ -10,7 +10,13 @@ export const transactionColumn: ColumnDef<Transaction>[] = [
     header: 'Recipient / Sender',
     cell: (props) => {
       const { row } = props
-      return <Recipient category={row.original.category} user={row.original.user} />
+      return (
+        <Recipient
+          avatar={row.original.user.avatar}
+          category={row.original.category}
+          name={row.original.user.name}
+        />
+      )
     }
   },
   {
