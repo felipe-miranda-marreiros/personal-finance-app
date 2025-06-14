@@ -3,9 +3,9 @@
 import Link from 'next/link'
 
 import { usePathname } from 'next/navigation'
-import { cn } from '@/shared/lib/utils'
-import { Icon, IconNames } from '@/shared/components/generic/Icons/Icon'
-import { Text } from '@/shared/components/generic/Text/Text'
+import { cn } from '@shared/lib/utils'
+import { Icon, IconNames } from '@shared/components/generic/Icons/Icon'
+import { Text } from '@shared/components/generic/Text/Text'
 
 export interface SidebarLinkProps {
   href: string

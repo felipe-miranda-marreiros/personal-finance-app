@@ -1,5 +1,5 @@
-import { Card } from '@/shared/components/generic/Card/Card'
-import { Input } from '@/shared/components/generic/Input/Input'
+import { Card } from '@shared/components/generic/Card/Card'
+import { Input } from '@shared/components/generic/Input/Input'
 import {
   Select,
   SelectContent,
@@ -7,8 +7,8 @@ import {
   SelectSeparator,
   SelectTrigger,
   SelectValue
-} from '@/shared/components/generic/Select/Select'
-import { Text } from '@/shared/components/generic/Text/Text'
+} from '@shared/components/generic/Select/Select'
+import { Text } from '@shared/components/generic/Text/Text'
 import { TransactionList } from '../components/TransactionList'
 import { TransactionDataTable } from '../datatable/TransactionDataTable'
 import {
@@ -19,7 +19,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious
-} from '@/shared/components/generic/Pagination/Pagination'
+} from '@shared/components/generic/Pagination/Pagination'
 
 export default function TransactionsPage() {
   return (

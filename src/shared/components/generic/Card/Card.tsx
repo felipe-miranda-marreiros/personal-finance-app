@@ -1,4 +1,4 @@
-import { cn } from '@/shared/lib/utils'
+import { cn } from '@shared/lib/utils'
 import { PropsWithChildren } from 'react'
 
 export type CardProps = React.ComponentProps<'div'>

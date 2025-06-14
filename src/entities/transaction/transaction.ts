@@ -1,3 +1,4 @@
+import { Content } from '@features/Dashboard/Content'
 import { User } from '../user/user'
 
 export interface Transaction {
@@ -7,3 +8,5 @@ export interface Transaction {
   transaction_date: string
   category: string
 }
+
+console.log(Content)

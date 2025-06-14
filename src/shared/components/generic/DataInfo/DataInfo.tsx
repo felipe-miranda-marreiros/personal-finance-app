@@ -1,4 +1,4 @@
-import { cn } from '@/shared/lib/utils'
+import { cn } from '@shared/lib/utils'
 import { cva, VariantProps } from 'class-variance-authority'
 
 export type DataInfoProps = React.ComponentProps<'div'>

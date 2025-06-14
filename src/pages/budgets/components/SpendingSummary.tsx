@@ -1,5 +1,5 @@
-import { Card } from '@/shared/components/generic/Card/Card'
-import { Text } from '@/shared/components/generic/Text/Text'
+import { Card } from '@shared/components/generic/Card/Card'
+import { Text } from '@shared/components/generic/Text/Text'
 import { SummaryItem } from './SpendingItem'
 
 interface Spending {

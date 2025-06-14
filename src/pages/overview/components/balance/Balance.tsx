@@ -1,4 +1,4 @@
-import { Card } from '@/shared/components/generic/Card/Card'
+import { Card } from '@shared/components/generic/Card/Card'
 import { OverviewCardMetric } from './components/OverviewCardMetric'
 
 export function Balance() {

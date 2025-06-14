@@ -1,7 +1,7 @@
-import { Card } from '@/shared/components/generic/Card/Card'
-import { Text } from '@/shared/components/generic/Text/Text'
+import { Card } from '@shared/components/generic/Card/Card'
+import { Text } from '@shared/components/generic/Text/Text'
 import { BarProgress } from './BarProgress'
-import { DataInfo } from '@/shared/components/generic/DataInfo/DataInfo'
+import { DataInfo } from '@shared/components/generic/DataInfo/DataInfo'
 import { LatestSpendingItem } from './LatestSpendingItem'
 
 export function SpendingDetails() {

@@ -1,5 +1,5 @@
-import { Text } from '@/shared/components/generic/Text/Text'
-import { Transaction } from '@/entities/transaction/transaction'
+import { Text } from '@shared/components/generic/Text/Text'
+import { Transaction } from '@entities/transaction/transaction'
 import { Recipient, RecipientProps } from '../Recipient/Recipient'
 
 export function RecipientItem(props: Transaction & RecipientProps) {

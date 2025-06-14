@@ -1,10 +1,10 @@
-import { Button } from '@/shared/components/generic/Button/Button'
-import { Card } from '@/shared/components/generic/Card/Card'
-import { CardContent } from '@/shared/components/generic/Card/CardContent'
-import { CardHeader } from '@/shared/components/generic/Card/CardHeader'
-import { DataInfo } from '@/shared/components/generic/DataInfo/DataInfo'
-import { Icon } from '@/shared/components/generic/Icons/Icon'
-import { Text } from '@/shared/components/generic/Text/Text'
+import { Button } from '@shared/components/generic/Button/Button'
+import { Card } from '@shared/components/generic/Card/Card'
+import { CardContent } from '@shared/components/generic/Card/CardContent'
+import { CardHeader } from '@shared/components/generic/Card/CardHeader'
+import { DataInfo } from '@shared/components/generic/DataInfo/DataInfo'
+import { Icon } from '@shared/components/generic/Icons/Icon'
+import { Text } from '@shared/components/generic/Text/Text'
 import { RecurringBillItem } from './components/RecurringBillItem'
 
 export function RecurringBills() {

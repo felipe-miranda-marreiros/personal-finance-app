@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { cn } from '@/shared/lib/utils'
+import { cn } from '@shared/lib/utils'
 import { cva, VariantProps } from 'class-variance-authority'
 import { Icon, IconNames } from '../Icons/Icon'
 

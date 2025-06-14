@@ -1,10 +1,10 @@
-import { TransactionList } from '@/pages/transactions/components/TransactionList'
-import { Button } from '@/shared/components/generic/Button/Button'
-import { Card } from '@/shared/components/generic/Card/Card'
-import { CardContent } from '@/shared/components/generic/Card/CardContent'
-import { CardHeader } from '@/shared/components/generic/Card/CardHeader'
-import { Icon } from '@/shared/components/generic/Icons/Icon'
-import { Text } from '@/shared/components/generic/Text/Text'
+import { TransactionList } from '@pages/transactions/components/TransactionList'
+import { Button } from '@shared/components/generic/Button/Button'
+import { Card } from '@shared/components/generic/Card/Card'
+import { CardContent } from '@shared/components/generic/Card/CardContent'
+import { CardHeader } from '@shared/components/generic/Card/CardHeader'
+import { Icon } from '@shared/components/generic/Icons/Icon'
+import { Text } from '@shared/components/generic/Text/Text'
 
 export function Transactions() {
   return (

@@ -1,6 +1,6 @@
-import { RecipientProps } from '@/shared/components/core/Recipient/Recipient'
-import { RecipientItem } from '@/shared/components/core/RecipientItem/RecipientItem'
-import { transactions } from '@/entities/transaction/mocks'
+import { RecipientProps } from '@shared/components/core/Recipient/Recipient'
+import { RecipientItem } from '@shared/components/core/RecipientItem/RecipientItem'
+import { transactions } from '@entities/transaction/mocks'
 
 export function TransactionList(props: RecipientProps) {
   return (

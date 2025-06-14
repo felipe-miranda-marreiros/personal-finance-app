@@ -3,7 +3,7 @@ import { Pots } from '../components/pots/Pots'
 import { Transactions } from '../components/transactions/Transactions'
 import { Budgets } from '../components/budgets/Budgets'
 import { RecurringBills } from '../components/recurring-bills/RecurringBills'
-import { Text } from '@/shared/components/generic/Text/Text'
+import { Text } from '@shared/components/generic/Text/Text'
 
 export default function OverviewPage() {
   return (

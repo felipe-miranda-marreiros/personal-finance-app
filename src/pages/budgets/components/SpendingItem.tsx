@@ -1,5 +1,5 @@
-import { DataInfo } from '@/shared/components/generic/DataInfo/DataInfo'
-import { Text } from '@/shared/components/generic/Text/Text'
+import { DataInfo } from '@shared/components/generic/DataInfo/DataInfo'
+import { Text } from '@shared/components/generic/Text/Text'
 
 interface SummaryItemProps {
   name: string

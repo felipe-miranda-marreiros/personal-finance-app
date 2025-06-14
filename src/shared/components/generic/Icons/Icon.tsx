@@ -1,4 +1,4 @@
-import { cn } from '@/shared/lib/utils'
+import { cn } from '@shared/lib/utils'
 import * as LucideIcon from 'lucide-react'
 
 export type IconProps = LucideIcon.LucideProps & {

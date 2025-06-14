@@ -1,5 +1,5 @@
-import { Text } from '@/shared/components/generic/Text/Text'
-import { cn } from '@/shared/lib/utils'
+import { Text } from '@shared/components/generic/Text/Text'
+import { cn } from '@shared/lib/utils'
 
 export interface CardContentProps {
   title: string

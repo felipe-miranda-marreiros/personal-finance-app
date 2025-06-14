@@ -1,10 +1,10 @@
 'use client'
 
-import { Text } from '../../../../shared/components/generic/Text/Text'
-import { cn } from '@/shared/lib/utils'
+import { cn } from '@shared/lib/utils'
 import { useState } from 'react'
-import { Icon } from '@/shared/components/generic/Icons/Icon'
+import { Icon } from '@shared/components/generic/Icons/Icon'
 import { SidebarLinkList } from '../SidebarLinkList/SidebarLinkList'
+import { Text } from '@shared/components/generic/Text/Text'
 
 export function DesktopSidebar() {
   const [isOpen, setIsOpen] = useState(false)

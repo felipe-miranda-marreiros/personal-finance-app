@@ -1,4 +1,4 @@
-import { Text } from '@/shared/components/generic/Text/Text'
+import { Text } from '@shared/components/generic/Text/Text'
 
 export function LatestSpendingItem() {
   return (

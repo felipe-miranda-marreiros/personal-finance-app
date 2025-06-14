@@ -1,5 +1,5 @@
-import { Text } from '@/shared/components/generic/Text/Text'
-import { Transaction } from '@/entities/transaction/transaction'
+import { Text } from '@shared/components/generic/Text/Text'
+import { Transaction } from '@entities/transaction/transaction'
 import Image from 'next/image'
 
 type TransactionProps = Pick<Transaction, 'user' | 'category'>

@@ -1,7 +1,7 @@
 'use client'
 
-import { Recipient } from '@/shared/components/core/Recipient/Recipient'
-import { Transaction } from '@/entities/transaction/transaction'
+import { Recipient } from '@shared/components/core/Recipient/Recipient'
+import { Transaction } from '@entities/transaction/transaction'
 import { ColumnDef } from '@tanstack/react-table'
 
 export const transactionColumn: ColumnDef<Transaction>[] = [
